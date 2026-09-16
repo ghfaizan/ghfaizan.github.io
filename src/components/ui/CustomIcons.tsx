@@ -16,15 +16,3 @@ export function PowerBIIcon({ size = 30, color = "#F2C811" }: { size?: number; c
     </svg>
   );
 }
-
-export function MatlabIcon({ size = 30 }: { size?: number; color?: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 17.5 8 9l3.5 4 3-3.5L21 17.5" fill="none" stroke="#0076A8" strokeWidth="1.8" strokeLinejoin="round"/>
-      <path d="M8 9l3.5 4 3-3.5 6.5 8H1z" fill="#0076A8" opacity="0.15"/>
-      <path d="M13 6.5c1-2 3-3.5 4.5-3 1 .3 1.5 1.2 1 2.5L14.5 13l-1.5-2 2-4.5z" fill="#E87722"/>
-      <path d="M14.5 13 11.5 9.5 8 9l5.5 7.5z" fill="#80C342"/>
-      <path d="M8 9 1 17.5h6l5.5-8z" fill="#0076A8" opacity="0.5"/>
-    </svg>
-  );
-}
