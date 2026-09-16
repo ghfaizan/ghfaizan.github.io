@@ -5,6 +5,8 @@ import Education from "@/components/sections/Education";
 import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
+import Courses from "@/components/sections/Courses";
+import Hackathons from "@/components/sections/Hackathons";
 import Publications from "@/components/sections/Publications";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 
@@ -17,6 +19,8 @@ export default function Home() {
       <Experience />
       <Projects />
       <Skills />
+      <Courses />
+      <Hackathons />
       <Publications />
       <Footer />
       <ScrollToTop />

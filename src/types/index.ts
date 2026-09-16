@@ -69,6 +69,22 @@ export type CvData = {
   url: string;
 };
 
+export type Course = {
+  id: number;
+  title: string;
+  code: string;
+  provider: string;
+  status: "Completed" | "In Progress";
+};
+
+export type Hackathon = {
+  id: number;
+  title: string;
+  organization: string;
+  period: string;
+  bullets: string[];
+};
+
 export type SocialLink = {
   name: string;
   href: string;

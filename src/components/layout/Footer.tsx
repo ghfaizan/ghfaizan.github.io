@@ -14,7 +14,7 @@ export default function Footer() {
               Muhammad Faizan
             </h2>
             <p className="text-gray-600 text-lmd leading-relaxed">
-              M.Eng student at Hochschule Harz building ML systems, data pipelines, and applied AI.
+              M.Eng student at Hochschule Harz working with LLMs, Agentic AI, RAG, Automation & MCP.
             </p>
             <div className="flex items-center gap-2 text-gray-500">
               <MapPin size={16} />
@@ -43,9 +43,12 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-gray-900">
               Skills & Focus Areas
             </h3>
-            <div>
+            <div className="flex flex-wrap gap-1.5">
               {about.researchAreas.map((area) => (
-                <span key={area} className="block text-gray-600 text-md">
+                <span
+                  key={area}
+                  className="px-2.5 py-0.5 text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100 rounded-full"
+                >
                   {area}
                 </span>
               ))}

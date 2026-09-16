@@ -6,6 +6,8 @@ export const menuItems: MenuItem[] = [
   { title: "Experience", url: "experience" },
   { title: "Projects", url: "projects" },
   { title: "Skills", url: "skills" },
+  { title: "Courses", url: "courses" },
+  { title: "Hackathons", url: "hackathons" },
   { title: "Publications", url: "publications" },
 ];
 

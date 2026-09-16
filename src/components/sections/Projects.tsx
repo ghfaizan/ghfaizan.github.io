@@ -1,9 +1,19 @@
 import { Github } from "lucide-react";
 import { projects } from "@/data/profile";
+import { useReveal } from "@/lib/useReveal";
+import { cn } from "@/lib/utils";
 
 export default function Projects() {
+  const { ref, visible } = useReveal<HTMLElement>();
   return (
-    <section id="projects" className="py-10 bg-white">
+    <section
+      ref={ref}
+      id="projects"
+      className={cn(
+        "py-10 bg-white transition-all duration-700 ease-out",
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+      )}
+    >
       <div className="max-w-6xl mx-auto px-6 xl:px-0">
         <div className="text-left xl:text-center mb-10">
           <h2 className="text-3xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">

@@ -1,4 +1,4 @@
-import type { About, Education, Experience, Project, News, Publication } from "@/types";
+import type { About, Course, Education, Experience, Hackathon, Project, News, Publication } from "@/types";
 import profileImage from "../assets/images/profile.jpg";
 
 export const about: About = {
@@ -13,14 +13,13 @@ export const about: About = {
   location: "Wernigerode, Germany",
   researchAreas: [
     "Machine Learning",
+    "Deep Learning",
+    "LLMs & RAG",
+    "Agentic AI",
     "MLOps",
-    "Data Science",
-    "Natural Language Processing",
-    "Generative AI & LLMs",
-    "Computer Vision",
     "Data Engineering",
-    "Python Development",
-    "Agentic AI Systems",
+    "Computer Vision",
+    "NLP",
   ],
   shortBio:
     "M.Eng student at Hochschule Harz working on ML engineering, data pipelines, and applied AI — seeking roles in ML, Data Science, and MLOps.",
@@ -97,6 +96,72 @@ export const experiences: Experience[] = [
     bullets: [
       "Conducted a risk assessment using a risk factor matrix, scoring and ranking identified hazards including ergonomic and chemical inhalation risks; presented findings to senior management.",
       "Performed a micro motion study of assembly line workers to identify inefficiencies in repetitive tasks and recommended changes to reduce unnecessary movement and worker fatigue.",
+    ],
+  },
+];
+
+export const courses: Course[] = [
+  {
+    id: 1,
+    title: "Self-Improving AI Agents",
+    code: "CS329A",
+    provider: "Stanford University",
+    status: "In Progress",
+  },
+  {
+    id: 2,
+    title: "Language Modeling from Scratch",
+    code: "CS336",
+    provider: "Stanford University",
+    status: "Completed",
+  },
+  {
+    id: 3,
+    title: "Deep Learning",
+    code: "CS230",
+    provider: "Stanford University",
+    status: "Completed",
+  },
+  {
+    id: 4,
+    title: "Machine Learning",
+    code: "CS229",
+    provider: "Stanford University",
+    status: "Completed",
+  },
+  {
+    id: 5,
+    title: "Artificial Intelligence: Principles and Techniques",
+    code: "CS221",
+    provider: "Stanford University",
+    status: "Completed",
+  },
+  {
+    id: 6,
+    title: "Introduction to Computer Science",
+    code: "CS50",
+    provider: "Harvard University",
+    status: "Completed",
+  },
+];
+
+export const hackathons: Hackathon[] = [
+  {
+    id: 1,
+    title: "Top Contributor",
+    organization: "Major League Hacking (MLH)",
+    period: "2026",
+    bullets: [
+      "Solved all challenges across the GenAI, Data, and Agents hackathon weeks.",
+    ],
+  },
+  {
+    id: 2,
+    title: "CS50 Puzzle Day",
+    organization: "Harvard University",
+    period: "2024 & 2025",
+    bullets: [
+      "Solved all puzzles in both the 2024 and 2025 editions.",
     ],
   },
 ];

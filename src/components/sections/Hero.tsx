@@ -1,11 +1,18 @@
 import SocialLinks from "@/components/ui/SocialLinks";
 import { about } from "@/data/profile";
+import { useReveal } from "@/lib/useReveal";
+import { cn } from "@/lib/utils";
 
 export default function Hero() {
+  const { ref, visible } = useReveal<HTMLElement>();
   return (
     <section
+      ref={ref}
       id="about"
-      className="w-full py-10 bg-linear-to-br from-slate-50 via-white to-blue-50/50"
+      className={cn(
+        "w-full py-10 bg-linear-to-br from-slate-50 via-white to-blue-50/50 transition-all duration-700 ease-out",
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+      )}
     >
       <div className="max-w-6xl mx-auto px-6 xl:px-0 grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap10 items-start">
         <div className="flex flex-col items-center gap-8">

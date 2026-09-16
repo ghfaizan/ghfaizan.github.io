@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <section
-      className={`sticky top-0 z-50 border-b p-4 bg-white/90 backdrop-blur-md transition ${isScrolled ? "shadow-sm" : ""}`}
+      className={`sticky top-0 z-50 border-b border-gray-200 p-4 bg-white/90 backdrop-blur-md transition ${isScrolled ? "shadow-sm" : ""}`}
     >
       {/* Desktop */}
       <nav className="mx-auto hidden max-w-6xl lg:flex lg:items-center lg:justify-between">
@@ -41,6 +41,9 @@ export default function Navbar() {
                     to={item.url}
                     smooth={true}
                     duration={1200}
+                    spy={true}
+                    offset={-80}
+                    activeClass="text-blue-600! font-semibold!"
                     className="inline-flex h-10 cursor-pointer items-center px-3 text-lg font-medium text-black hover:text-blue-600 transition duration-150"
                   >
                     {item.title}
@@ -79,6 +82,9 @@ export default function Navbar() {
               to={item.url}
               smooth={true}
               duration={1200}
+              spy={true}
+              offset={-80}
+              activeClass="text-blue-600! font-semibold!"
               key={item.title}
               onClick={() => setMobileOpen(false)}
               className="text-lg font-medium text-black hover:text-blue-600 cursor-pointer transition"

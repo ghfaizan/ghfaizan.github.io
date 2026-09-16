@@ -5,9 +5,12 @@ import { Button } from "@/components/ui/button";
 import { publications } from "@/data/profile";
 import { groupAndPaginate } from "@/lib/utils";
 import EmptyState from "@/components/ui/EmptyState";
+import { useReveal } from "@/lib/useReveal";
+import { cn } from "@/lib/utils";
 
 export default function Publications() {
   const [visibleCount, setVisibleCount] = useState(5);
+  const { ref, visible } = useReveal<HTMLElement>();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +49,14 @@ export default function Publications() {
   const { visibleGroups, sortedKeys } = groupAndPaginate(publications, "year", visibleCount);
 
   return (
-    <section id="publications" className="py-10 bg-gray-50">
+    <section
+      ref={ref}
+      id="publications"
+      className={cn(
+        "py-10 bg-gray-50 transition-all duration-700 ease-out",
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+      )}
+    >
       <div className="max-w-6xl mx-auto px-6 xl:px-0">
         <div className="text-left lg:text-center mb-10">
           <h2 className="text-3xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
