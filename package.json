@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://github.com/mhd-faizzan/mhd-faizzan.github.io",
+  "homepage": "https://github.com/ghfaizan/ghfaizan.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

@@ -246,7 +246,7 @@ export const projects: Project[] = [
     description:
       "Full-stack RAG chatbot for Hochschule Harz students — ask anything about admissions, programs, or campus life in plain language. Pipeline: question → fastembed (all-MiniLM-L6-v2) → Pinecone vector search (top-3 context retrieval) → prompt builder → Llama 3.3 70B via Groq → conversational response with source references. Includes prompt injection sanitizer and a global daily rate limiter. FastAPI backend deployed on Railway, React/Vite frontend on Vercel with auto-deploy on every push. Live at campus-guide-gpt.vercel.app.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/CampusGuideGPT",
+    githubLink: "https://github.com/ghfaizan/CampusGuideGPT",
   },
   {
     id: 2,
@@ -255,7 +255,7 @@ export const projects: Project[] = [
     description:
       "AI agent with async human-in-the-loop authorization built at MLH Global Hack Week. Safe read actions execute immediately; high-impact actions (create/delete events) pause and send an approval email with Approve/Deny links before executing. Intent classification via Groq routes commands to the Calendar API.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/veto-agent",
+    githubLink: "https://github.com/ghfaizan/veto-agent",
   },
   {
     id: 3,
@@ -264,7 +264,7 @@ export const projects: Project[] = [
     description:
       "Standard RAG retrieves by what you ask — this one retrieves by who you are. Built at MLH Global Hack Week using Auth0 FGA, FAISS, and Groq (Llama 3.3 70B). FGA checks document-level permissions before retrieval, so unauthorized documents never enter the pipeline. Same question, different user, different result.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/privacy-aware-rag-bot",
+    githubLink: "https://github.com/ghfaizan/privacy-aware-rag-bot",
   },
   {
     id: 4,
@@ -273,7 +273,7 @@ export const projects: Project[] = [
     description:
       "Real-time suspicious activity detection on UCF-Crime surveillance footage. YOLOv8-pose reduces input from ~6M pixels to 34 keypoints per frame; 30-frame sequences fed into an LSTM classifier achieved 93% accuracy and 93% weighted F1 across 14 activity classes on 218k sequences. An autoencoder trained exclusively on normal behavior flags unknown anomalies via reconstruction error.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/surveillance-pipeline",
+    githubLink: "https://github.com/ghfaizan/surveillance-pipeline",
   },
   {
     id: 5,
@@ -282,7 +282,7 @@ export const projects: Project[] = [
     description:
       "Fraud detection pipeline on 284,807 credit card transactions (0.17% fraud rate). Applied SMOTE on training data to fix class imbalance — 394 → 227k fraud cases. Trained Decision Tree (recall 0.83, AUC 0.88) and SVM (AUC 0.94); chose Decision Tree for higher recall. Predictions served via FastAPI with separate endpoints per model.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/insurance-fraud-detection",
+    githubLink: "https://github.com/ghfaizan/insurance-fraud-detection",
   },
   {
     id: 6,
@@ -291,7 +291,7 @@ export const projects: Project[] = [
     description:
       "End-to-end MLOps pipeline that detects feature distribution drift using KS tests across 11 features with configurable thresholds. On drift, the pipeline automatically retrains a RandomForest model and opens a GitHub PR with a champion vs new model metrics comparison. CI/CD via GitHub Actions; Docker image published to GitHub Container Registry.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/model_drift_pipeline",
+    githubLink: "https://github.com/ghfaizan/model_drift_pipeline",
   },
   {
     id: 7,
@@ -300,7 +300,7 @@ export const projects: Project[] = [
     description:
       "AI fact-checker that verifies claims against academic and government sources (.gov, .edu, DOI) and returns cited answers — built as Technical Lead during Smart Startup Garage. Powered by Groq (LLaMA 3.1 8B) with Firebase Auth and Streamlit. Pitched live with a working demo, earned Grade 1.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/Factverify_Ai",
+    githubLink: "https://github.com/ghfaizan/Factverify_Ai",
   },
   {
     id: 8,
@@ -309,7 +309,7 @@ export const projects: Project[] = [
     description:
       "Built out of frustration with checking every supermarket app separately. Scrapes KaufDa's internal API for live deals from Lidl, Rewe, Netto, and Kaufland — search a product across all stores at once, and the cheapest result gets flagged automatically. Filter by category, sort by discount or price, and refresh on demand. Pipeline: Python scraper → MySQL → Flask REST API → React frontend, with GitHub Actions handling weekly auto-scraping.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/kaufda_deal_finder",
+    githubLink: "https://github.com/ghfaizan/kaufda_deal_finder",
   },
   {
     id: 9,
@@ -318,7 +318,7 @@ export const projects: Project[] = [
     description:
       "Full GPT-2 architecture implemented from scratch in PyTorch — multi-head self-attention, positional embeddings, transformer blocks, layer norm, and autoregressive language modeling. Covers the complete pretraining pipeline from tokenization to next-token prediction, built to deeply understand how large language models work at the implementation level.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/gpt2_from_scratch",
+    githubLink: "https://github.com/ghfaizan/gpt2_from_scratch",
   },
   {
     id: 10,
@@ -327,6 +327,6 @@ export const projects: Project[] = [
     description:
       "Mixture of Experts architecture integrated with BERT, trained from scratch and benchmarked on GLUE. MoE routing selects a subset of expert feed-forward layers per token, improving parameter efficiency over dense transformers at equivalent compute.",
     year: "",
-    githubLink: "https://github.com/mhd-faizzan/MoE_BERT",
+    githubLink: "https://github.com/ghfaizan/MoE_BERT",
   },
 ];
